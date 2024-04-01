@@ -1,0 +1,15 @@
+th,td,{
+    color:rgb(0, 255, 255);
+    border: 1pt solid black;
+}
+.hello{
+    color: rgb(10, 241, 54);
+    border: 2px solid black;
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+    margin-left: 100px;
+    padding: 30px;
+}
+#h3{
+    color: rgb(25, 10, 233);
+}
