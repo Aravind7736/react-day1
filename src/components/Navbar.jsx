@@ -1,21 +1,35 @@
-import { AppBar, Button, Toolbar, Typography } from '@mui/material'
+import { AppBar, Button, Table, TableBody, TableCell, TableRow, Toolbar, Typography } from '@mui/material'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div>
-        <AppBar>
-            <Toolbar>
-                <Typography variant='h6'>My App</Typography>
-                <Button variant='contained' color='success'>
-                    <Link to={"/"}style={{textDecoration:"none",color:"white"}}>Login</Link></Button>
-                <Button variant='contained' color='error'>
-                    <Link to={"/signup"}style={{textDecoration:"none",color:"white"}}>SIGNUP</Link></Button>
+     <AppBar>
+      <Toolbar>
+      <Typography variant='h4'>WELCOME</Typography>&nbsp; &nbsp;
+      <Button variant='contained' color='error'> 
+      <Link to={'/'} style={{textDecoration:'none', color:'white'}}>
 
-            </Toolbar>
-            </AppBar>
-        
+View
+
+</Link>
+</Button>
+
+&nbsp; &nbsp;
+      <Button variant='contained' color='success'>
+      <Link to={'/add'} style={{textDecoration:'none', color:'white'}}>
+
+
+           Add
+
+           </Link>
+
+           </Button>
+      
+      </Toolbar>
+      </AppBar>
+      
     </div>
   )
 }
